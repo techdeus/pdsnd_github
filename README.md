@@ -1,15 +1,16 @@
 ### Date created
-Include the date you created this project and README file.
+09-13-2019
 
 ### Project Title
-Replace the Project Title
+My Bike Sharing Data
 
 ### Description
-Describe what your project is about and what it does
+I am using Pandas and Numpy to analyze bike data across three major U.S. cities. The user can filter based on city, month and/or day to get the results they are looking for. Each section provides highlights of user data, riding data, location data and more.
 
 ### Files used
-Include the files used
+Bikeshare_2.py
+Three CSV Files: New York, Chicago and Washington
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+https://github.com/techdeus/pdsnd_github.git
 
