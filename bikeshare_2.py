@@ -109,7 +109,6 @@ def load_data(city, month, day):
             print("{} is not available in the data set \n".format(day.title()))
 
     print("Loading Basic Data about the city: {} \n".format(city.title()))
-#     print(df.head(25))
     return df
 
 def clean_data(df):
@@ -127,7 +126,6 @@ def clean_data(df):
         df['Birth Year'].fillna(df['Birth Year'].mean(), inplace=True)
         missing_data_update = df.isnull().sum().sum()
         print("Post-Cleaning: Currently a total of {} missing data values \n".format(missing_data_update))
-#         print(df.head(25))
     print("\n This took %s seconds." % (time.time() - start_time))
     print('-' * 40)
 
@@ -195,7 +193,7 @@ def trip_duration_stats(df):
     print('Total Travel Time in Days: ', total_time_days)
     print('Total Travel Time in Years: ', total_time_years)
 
-          # display mean travel time
+    # display mean travel time
     mean_time = df['Trip Duration'].mean()
     mean_time_minutes = mean_time / 60
     print('Total Avg Travel Time in Seconds: ', mean_time)
@@ -246,6 +244,9 @@ def main():
         city, month, day = get_filters()
         df = load_data(city, month, day)
         clean_data(df)
+        continue = input('\nWould you like to see the data results? Enter y or n\n')
+        if continue.lower() != 'y':
+            break
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
