@@ -127,7 +127,6 @@ def clean_data(df):
         df['Birth Year'].fillna(df['Birth Year'].mean(), inplace=True)
         missing_data_update = df.isnull().sum().sum()
         print("Post-Cleaning: Currently a total of {} missing data values \n".format(missing_data_update))
-#         print(df.head(25))
     print("\n This took %s seconds." % (time.time() - start_time))
     print('-' * 40)
 
