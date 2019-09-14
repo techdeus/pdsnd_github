@@ -2,7 +2,7 @@
 09-13-2019
 
 ### Project Title
-My Bike Sharing Data
+My Bike Sharing Data - authored by TechDeus
 
 ### Description
 I am using Pandas and Numpy to analyze bike data across three major U.S. cities. The user can filter based on city, month and/or day to get the results they are looking for. Each section provides highlights of user data, riding data, location data and more.
